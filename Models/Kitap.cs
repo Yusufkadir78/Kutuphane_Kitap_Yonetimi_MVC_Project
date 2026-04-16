@@ -1,11 +1,20 @@
-﻿namespace KutuphaneKitapYonetimi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+public class Book
 {
-    public class Book
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public decimal Price { get; set; }
-        public int Stock { get; set; }
-    }
+    public int Id { get; set; }
+
+    [Required(ErrorMessage = "Başlık boş olamaz")]
+    [StringLength(100)]
+    public string Title { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Yazar boş olamaz")]
+    [StringLength(100)]
+    public string Author { get; set; } = string.Empty;
+
+    [Range(0.01, double.MaxValue, ErrorMessage = "Fiyat 0'dan büyük olmalı")]
+    public decimal Price { get; set; }
+
+    [Range(0, int.MaxValue, ErrorMessage = "Stok negatif olamaz")]
+    public int Stock { get; set; }
 }

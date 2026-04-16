@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KitapYonetim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7098655d4025c6eda87877de3524f011689471ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("KitapYonetim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KitapYonetim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
