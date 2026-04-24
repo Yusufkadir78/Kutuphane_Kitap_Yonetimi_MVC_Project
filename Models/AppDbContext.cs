@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-public class AppDbContext : DbContext
+namespace KitapYonetim.Models
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
-
-    public DbSet<Book> Books { get; set; }
 }

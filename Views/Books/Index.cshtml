@@ -9,6 +9,7 @@
 
 <table class="table">
     <tr>
+        <th>Kategori</th>
         <th>Başlık</th>
         <th>Yazar</th>
         <th>Fiyat</th>
@@ -19,6 +20,7 @@
     @foreach (var item in Model)
     {
         <tr>
+            <td>@item.Category?.Name</td>
             <td>@item.Title</td>
             <td>@item.Author</td>
             <td>@item.Price</td>

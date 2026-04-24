@@ -16,6 +16,14 @@
 
     <input asp-for="Stock" />
     <span asp-validation-for="Stock"></span>
+    <label>Kategori</label>
+
+    <select asp-for="CategoryId">
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
 
     <button>Güncelle</button>
 </form>
