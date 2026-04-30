@@ -3,6 +3,7 @@ namespace KitapYonetim
 {
     using Microsoft.EntityFrameworkCore;
     using KutuphaneKitapYonetimi.Models;
+    using KitapYonetim.Models;
 
     public class Program
     {

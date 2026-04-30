@@ -145,3 +145,4 @@ C:\Users\acer\source\repos\KitapYonetim\obj\Debug\net8.0\refint\KitapYonetim.dll
 C:\Users\acer\source\repos\KitapYonetim\obj\Debug\net8.0\KitapYonetim.pdb
 C:\Users\acer\source\repos\KitapYonetim\obj\Debug\net8.0\KitapYonetim.genruntimeconfig.cache
 C:\Users\acer\source\repos\KitapYonetim\obj\Debug\net8.0\ref\KitapYonetim.dll
+C:\Users\acer\source\repos\KitapYonetim\obj\Debug\net8.0\KitapYonetim.sourcelink.json
