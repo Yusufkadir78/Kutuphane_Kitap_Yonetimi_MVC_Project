@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KitapYonetim.Models;
 
 public class BooksController : Controller
 {
@@ -12,12 +13,15 @@ public class BooksController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var books = await _context.Books.ToListAsync();
+        var books = await _context.Books
+    .Include(b => b.Category)
+    .ToListAsync();
         return View(books);
     }
 
     public IActionResult Add()
     {
+        ViewBag.Categories = _context.Categories.ToList();
         return View();
     }
 
@@ -26,17 +30,20 @@ public class BooksController : Controller
     public async Task<IActionResult> Add(Book newBook)
     {
         if (!ModelState.IsValid)
+        {
+            ViewBag.Categories = _context.Categories.ToList();
             return View(newBook);
+        }
 
         _context.Books.Add(newBook);
         await _context.SaveChangesAsync();
 
-        TempData["Success"] = "Kitap eklendi";
+        TempData["Success"] = "Kitap başarıyla eklendi.";
         return RedirectToAction("Index");
     }
-
     public async Task<IActionResult> Update(int id)
     {
+        ViewBag.Categories = _context.Categories.ToList();
         var book = await _context.Books.FindAsync(id);
         if (book == null) return NotFound();
         return View(book);
@@ -47,7 +54,10 @@ public class BooksController : Controller
     public async Task<IActionResult> Update(Book updatedBook)
     {
         if (!ModelState.IsValid)
+        {
+            ViewBag.Categories = _context.Categories.ToList();
             return View(updatedBook);
+        } 
 
         _context.Books.Update(updatedBook);
         await _context.SaveChangesAsync();

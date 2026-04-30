@@ -4,15 +4,63 @@
     @Html.AntiForgeryToken()
 
     <input asp-for="Title" class="form-control" />
+    <label>Kategori</label>
+
+    <select asp-for="CategoryId" class="form-control">
+        <option value="">Seçiniz</option>
+
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+
+    <span asp-validation-for="CategoryId"></span>
     <span asp-validation-for="Title"></span>
 
     <input asp-for="Author" class="form-control" />
+    <label>Kategori</label>
+
+    <select asp-for="CategoryId" class="form-control">
+        <option value="">Seçiniz</option>
+
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+
+    <span asp-validation-for="CategoryId"></span>
     <span asp-validation-for="Author"></span>
 
     <input asp-for="Price" class="form-control" />
+    <label>Kategori</label>
+
+    <select asp-for="CategoryId" class="form-control">
+        <option value="">Seçiniz</option>
+
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+
+    <span asp-validation-for="CategoryId"></span>
     <span asp-validation-for="Price"></span>
 
     <input asp-for="Stock" class="form-control" />
+    <label>Kategori</label>
+
+    <select asp-for="CategoryId" class="form-control">
+        <option value="">Seçiniz</option>
+
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+
+    <span asp-validation-for="CategoryId"></span>
     <span asp-validation-for="Stock"></span>
 
     <button class="btn btn-success">Ekle</button>

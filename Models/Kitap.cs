@@ -8,6 +8,9 @@ public class Book
     [StringLength(100)]
     public string Title { get; set; } = string.Empty;
 
+    public int CategoryId { get; set; }   // Foreign Key
+    public Category? Category { get; set; } // Navigation Property
+
     [Required(ErrorMessage = "Yazar boş olamaz")]
     [StringLength(100)]
     public string Author { get; set; } = string.Empty;

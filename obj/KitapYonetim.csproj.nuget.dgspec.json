@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\source\\repos\\KitapYonetim\\KitapYonetim.csproj": {}
+    "C:\\Users\\acer\\Source\\Repos\\Kutuphane_Kitap_Yonetimi_MVC_Project\\KitapYonetim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\source\\repos\\KitapYonetim\\KitapYonetim.csproj": {
+    "C:\\Users\\acer\\Source\\Repos\\Kutuphane_Kitap_Yonetimi_MVC_Project\\KitapYonetim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\source\\repos\\KitapYonetim\\KitapYonetim.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\Source\\Repos\\Kutuphane_Kitap_Yonetimi_MVC_Project\\KitapYonetim.csproj",
         "projectName": "KitapYonetim",
-        "projectPath": "C:\\Users\\acer\\source\\repos\\KitapYonetim\\KitapYonetim.csproj",
+        "projectPath": "C:\\Users\\acer\\Source\\Repos\\Kutuphane_Kitap_Yonetimi_MVC_Project\\KitapYonetim.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\source\\repos\\KitapYonetim\\obj\\",
+        "outputPath": "C:\\Users\\acer\\Source\\Repos\\Kutuphane_Kitap_Yonetimi_MVC_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
